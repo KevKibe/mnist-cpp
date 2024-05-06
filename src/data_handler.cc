@@ -183,8 +183,8 @@ std::vector<data *> * data_handler::get_validation_data()
 
 int main(){
     data_handler *dh = new data_handler();
-    dh->read_feature_vector("/Users/la/Desktop/Projects/ML in CPP/mnist_ml/train-images.idx3-ubyte");
-    dh->read_feature_labels("/Users/la/Desktop/Projects/ML in CPP/mnist_ml/train-labels.idx1-ubyte");
+    dh->read_feature_vector("./data/train-images.idx3-ubyte"); // Verify the correct path 
+    dh->read_feature_labels("./data/train-labels.idx1-ubyte"); // Verify the correct path 
     dh->split_data();
     dh->count_classes();
 }
